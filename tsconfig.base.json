@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "lib": [
+      "DOM",
+      "ES2015"
+    ],
+    "strict": true,
+    "types": [
+      "jest"
+    ],
+    "esModuleInterop": true,
+    "experimentalDecorators": true
+  },
+}
