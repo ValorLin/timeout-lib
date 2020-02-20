@@ -12,18 +12,16 @@ $ yarn add timeout-lib
 
 ### withTimeout()
 ```typescript
-import { withTimeout } from 'timeout-lib';
+import { withTimeout, TimeoutError } from 'timeout-lib';
 
-const fn = async () => { 
-    // long task
+const _fn = async () => { 
+    await new Promise(() => {});
 }
 
-const fnWithTimeout = withTimeout(fn, {
-    time: 30 * 1000
-});
+const fn = withTimeout(_fn, { time: 1000 });
 
 try {
-    await fnWithTimeout();
+    await fn();
 } catch(err) {
     if(err instanceof TimeoutError) {
         console.log(`Got a TimeoutError while executing fn()`)
@@ -36,9 +34,9 @@ try {
 import { timeout, TimeoutError } from 'timeout-lib';
 
 class Demo {
-    @timeout({time: 30 * 1000})
+    @timeout({ time: 1000 })
     async fn() {
-        // long task
+        await new Promise(() => {});
     }
 }
 
