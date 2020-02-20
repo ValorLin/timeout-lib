@@ -17,12 +17,13 @@
     "rollup": "^1.0.0",
     "rollup-plugin-typescript": "^1.0.0",
     "ts-jest": "^25.2.0",
+    "tslib": "^1.10.0",
     "typescript": "^3.2.2"
   },
   "scripts": {
     "prebuild": "rm -fr lib dist",
     "build": "rollup -c && tsc --project tsconfig.build.json",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "test": "jest src",
     "dev": "jest --watch --only-changed"
   },
