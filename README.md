@@ -1,3 +1,5 @@
+![CI](https://github.com/weilao/timeout-lib/workflows/CI/badge.svg)
+
 # Timeout Lib
 
 ## Install
