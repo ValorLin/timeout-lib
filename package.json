@@ -23,7 +23,8 @@
     "prebuild": "rm -fr lib dist",
     "build": "rollup -c && tsc --project tsconfig.build.json",
     "prepublish": "npm run build",
-    "test": "jest src --watch"
+    "test": "jest src",
+    "dev": "jest --watch --only-changed"
   },
   "files": [
     "dist",

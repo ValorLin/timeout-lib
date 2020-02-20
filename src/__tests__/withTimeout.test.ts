@@ -1,10 +1,8 @@
 import { withTimeout } from "../withTimeout";
 import { wait } from "../wait";
-import { TimeoutOptions } from "../types";
 import { TimeoutError } from "../TimeoutError";
 
 jest.useFakeTimers();
-
 
 describe('withTimeout()', () => {
 	afterEach(() => {
