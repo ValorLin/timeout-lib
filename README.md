@@ -3,6 +3,7 @@
 ## Install
 
 ```bash
+// Use npm
 $ npm install timeout-lib
 // Or use yarn
 $ yarn add timeout-lib
