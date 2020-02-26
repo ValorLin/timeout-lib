@@ -9,7 +9,6 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
     - name: Install Dependeices
-      if: steps.yarn-cache.outputs.cache-hit != 'true'
       run: yarn
     - name: Unit Testing
       run: yarn test
