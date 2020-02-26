@@ -1,10 +1,21 @@
 {
-  "extends": "./tsconfig.base.json",
   "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "DOM",
+      "ES2015"
+    ],
+    "strict": true,
+    "types": [
+      "jest"
+    ],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
     "outDir": "lib",
-    "declaration": true,
+    "declaration": true
   },
   "include": [
     "src/**/*"
-  ],
+  ]
 }
