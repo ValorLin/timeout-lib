@@ -10,7 +10,7 @@
     "timeout",
     "async"
   ],
-  "repository": "weilao/timeout-lib",
+  "repository": "ValorLin/timeout-lib",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^25.1.2",
